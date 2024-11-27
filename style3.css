@@ -169,6 +169,26 @@ a {
     text-align: center;
     font-size: 18px;
 }
+.loading
+{
+    font-size: 24px;
+    color: #93ff61;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse
+{
+    0%{
+        opacity:0.5;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%
+    {
+        opacity:1
+    }
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
