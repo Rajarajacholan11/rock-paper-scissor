@@ -13,19 +13,34 @@ let playerscore=0;
     rock.addEventListener("click",()=>
         {
          userchoice="rock";
-         game();
+           document.getElementById("loading").style.display="inline-block";
+         setTimeout(()=>{
+            document.getElementById("loading").style.display="none";
+            game();
+
+         },2000);
         });
         
         paper.addEventListener("click",()=>
         {
             userchoice="paper";
+              document.getElementById("loading").style.display="inline-block";
+         setTimeout(()=>{
+            document.getElementById("loading").style.display="none";
             game();
+
+         },2000);
         });
         
         scissor.addEventListener("click",()=>
         {
                userchoice="scissor"; 
-               game();
+                 document.getElementById("loading").style.display="inline-block";
+         setTimeout(()=>{
+            document.getElementById("loading").style.display="none";
+            game();
+
+         },2000);
         });
         
     
