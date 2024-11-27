@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Landing Page Container */
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    background-color: #187979;
+    width: 100%;
+    height: 100%;
+    background-image: url(../IMAGES/bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Form Container */
+.CONTAINER {
+    border: 1px solid;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.FORM {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#name {
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    border-color: greenyellow;
+}
+
+#butt {
+    width: 100%;
+    max-width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #c2eb53;
+    cursor: pointer;
+}
+
+.animated-button {
+    background: linear-gradient(45deg, #93ff61, #bdff71);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    animation: scaleInOut 2s infinite ease-in-out;
+    transition: transform 0.2s;
+    width: 100%;
+    max-width: 120px;
+    padding: 10px;
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scaleInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Game Page */
+.maincontainer1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../IMAGES/bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.container1 {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.green {
+    color: #628011;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.imagecontainer img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(243, 240, 240);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagecontainer img:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .CONTAINER,
+    .container1 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .imagecontainer img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .animated-button {
+        font-size: 16px;
+    }
+
+    .imagecontainer img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .result {
+        font-size: 14px;
+    }
+}
